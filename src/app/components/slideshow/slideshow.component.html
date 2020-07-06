@@ -1,0 +1,17 @@
+<ngb-carousel class="mb-2" style="height: auto; width: 100%;">
+  <ng-template ngbSlide *ngFor="let image of images">
+    <div class="picsum-img-wrapper">
+      <img  [src]="image"  height="auto" width="100%">
+    </div>
+    <div class="carousel-caption">
+      <button type="button" class="btn btn-danger" (click)="downloadImg(image)">Download</button>
+    </div>
+  </ng-template>
+</ngb-carousel>
+<form style="display: inline-block">
+    <h4 >Upload Image</h4>
+    <div class="custom-file">
+      <input type="file" class="custom-file-input" id="file" (change)="handleFileInput($event.target.files)">
+      <label class="custom-file-label" for="file">Choose Image</label>
+    </div>
+</form>

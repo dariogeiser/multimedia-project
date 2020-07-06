@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/multimedia",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
